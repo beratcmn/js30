@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" defer></script>
+    <title>JS & CSS Clock</title>
+</head>
+
+<body>
+
+    <div class="h-screen flex items-center justify-center bg-gradient-to-b from-purple-500 to-pink-500">
+
+        <div class="clock w-[30rem] h-[30rem]">
+            <div class="clock-face w-full h-full border-[1rem] border-white rounded-full p-4">
+                <div class="middle-dot h-[6px] w-[6px] rounded-full bg-white absolute top-[50%] left-[50%] z-30"></div>
+
+                <div
+                    class="hand hour-hand rotate-180 origin-left w-[11rem] h-[6px] bg-black absolute top-[50%] left-[50%] rounded-lg">
+                </div>
+
+                <div
+                    class="hand min-hand rotate-45 origin-left w-[13rem] h-[6px] bg-black absolute top-[50%] left-[50%] rounded-lg">
+                </div>
+
+                <div
+                    class="hand second-hand rotate-12 origin-left w-[13rem] h-[6px] bg-red-500 absolute top-[50%] left-[50%] rounded-lg">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
