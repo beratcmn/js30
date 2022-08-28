@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>CSS Variables and JS</title>
+</head>
+
+<body>
+
+    <div class="h-screen bg-teal-600">
+
+        <!--? Content -->
+        <div class="max-w-7xl mx-auto py-20 flex flex-col items-center gap-y-10">
+            <h1 class="text-white font-semibold text-3xl">Update CSS Variables with JS</h1>
+
+            <div class="controls flex flex-row gap-x-10">
+
+                <div class="flex flex-row items-center gap-x-5">
+                    <label class="text-white text-lg font-medium" for="spacing">Spacing:</label>
+                    <input type="range" name="spacing" min="10" max="280">
+                </div>
+
+                <div class="flex flex-row items-center gap-x-5">
+                    <label class="text-white text-lg font-medium" for="blur">Blur:</label>
+                    <input type="range" name="blur" min="10" max="280">
+                </div>
+
+            </div>
+
+            <input type="color" name="base" value="#ffffff">
+
+            <div class="flex flex-col items-center gap-y-4">
+                <h2 class="font-medium text-xl">
+                    Changing CSS Variables with JS is super cool!
+                </h2>
+
+                <img class="w-2/3" draggable="false"
+                    src="https://images.unsplash.com/photo-1661496036882-30dd4fac8eb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    alt="Image">
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
